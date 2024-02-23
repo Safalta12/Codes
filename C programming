@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+int main()
+{
+	FILE *fp;
+	fp=fopen("test.txt","w");
+	if(fp==NULL)
+	 {
+	 	printf("Cannot create file.");
+	 	exit(0);
+	 }
+	 else
+	 {
+	 	printf("\n File is created.");
+	 }
+	 fputs("I study BCA",fp);
+	 fclose(fp);
+	 getch();
+}
