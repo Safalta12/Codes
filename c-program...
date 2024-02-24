@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+int main()
+{
+	FILE *fp;
+	char s[100];
+	fp=fopen("test.txt","r");
+	if(fp==NULL)
+	 {
+	 	printf("Cannot open file.");
+	 	exit(0);
+	 }
+	 else
+	 {
+	 	printf("\n File is opened.");
+	 }
+	 fputs(s,19,fp);
+	 printf("\n Test from file is:%s",s)
+	 fclose(fp);
+	 getch();
+}
